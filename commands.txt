@@ -1,4 +1,5 @@
-add
-clone
+add <file_name>
+add .
+clone <URL>
 pull
 pull --all

@@ -37,7 +37,7 @@ public class AppRunner {
         print("В автомате доступны:");
         showProducts(products);
 
-        print("Монет на сумму: " + userCredit.getAmount());
+        print("Ваш кредит в сумме: " + userCredit.getAmount());
 
         UniversalArray<Product> allowProducts = new UniversalArrayImpl<>();
         allowProducts.addAll(getAllowedProducts().toArray());
@@ -56,9 +56,21 @@ public class AppRunner {
     }
 
     private void chooseAction(UniversalArray<Product> products) {
+        print(" a - Пополнить баланс монетками\n k - Пополнить картой");
         showActions(products);
         print(" h - Выйти");
         String action = fromConsole().substring(0, 1);
+        if ("a".equalsIgnoreCase(action)) {
+            userCredit.setAmount(userCredit.getAmount() + 10);
+            print("Вы пополнили баланс на 10");
+            return;
+        }
+        if ("k".equalsIgnoreCase(action)) {
+            userCredit.setAmount(userCredit.getAmount()+ creditCard.getAmount());
+            print("Вы пополнили баланс на 20");
+            return;
+
+        }
         try {
             for (int i = 0; i < products.size(); i++) {
                 if (products.get(i).getActionLetter().equals(ActionLetter.valueOf(action.toUpperCase()))) {

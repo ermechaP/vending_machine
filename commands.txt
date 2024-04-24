@@ -4,3 +4,4 @@ clone <URL>
 pull
 pull --all
 push origin branchName
+status

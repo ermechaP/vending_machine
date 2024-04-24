@@ -10,7 +10,7 @@ public class AppRunner {
     private final UniversalArray<Product> products = new UniversalArrayImpl<>();
 
     private final UserCredit userCredit;
-
+    private final CreditCard creditCard;
     private static boolean isExit = false;
 
     private AppRunner() {
@@ -23,6 +23,7 @@ public class AppRunner {
                 new Pistachios(ActionLetter.G, 130)
         });
         userCredit = new UserCredit(100);
+        creditCard=new CreditCard(200);
     }
 
     public static void run() {

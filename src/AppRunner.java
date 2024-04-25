@@ -22,7 +22,7 @@ public class AppRunner {
                 new Mars(ActionLetter.F, 80),
                 new Pistachios(ActionLetter.G, 130)
         });
-        userCredit = new UserCredit(100);
+        userCredit = new UserCredit(0);
         creditCard=new CreditCard(200);
     }
 

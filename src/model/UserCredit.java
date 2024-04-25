@@ -1,9 +1,9 @@
 package model;
 
-public class CoinAcceptor {
+public class UserCredit {
     private int amount;
 
-    public CoinAcceptor(int amount) {
+    public UserCredit(int amount) {
         this.amount = amount;
     }
 

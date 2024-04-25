@@ -1,0 +1,8 @@
+add <file_name>
+add .
+clone <URL>
+pull
+pull --all
+push origin branchName
+status
+help

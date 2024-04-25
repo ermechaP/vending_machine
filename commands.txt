@@ -7,3 +7,4 @@ push origin branchName
 status
 help
 rebase
+checkout

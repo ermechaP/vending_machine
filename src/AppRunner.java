@@ -61,12 +61,12 @@ public class AppRunner {
         String action = fromConsole().substring(0, 1);
         if ("a".equalsIgnoreCase(action)) {
             userCredit.setAmount(userCredit.getAmount() + 10);
-            print("Вы пополнили баланс на 10");
+            print("Вы пополнили баланс на 10 монетами");
             return;
         }
         if ("k".equalsIgnoreCase(action)) {
             userCredit.setAmount(userCredit.getAmount()+ creditCard.getAmount());
-            print("Вы пополнили баланс на 20");
+            print("Вы пополнили баланс на 20 картой");
             return;
 
         }

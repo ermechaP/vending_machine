@@ -6,3 +6,4 @@ pull --all
 push origin branchName
 status
 help
+rebase
